@@ -13,7 +13,7 @@ It stores close to 600.000 passwords in its database and verifies if your passwo
 And how many times it has been leaked.
 
 
-The API works using the SHA1 hash and, in order to be as secure as possible, it does not send over the wire the real password or the entire SHA1 hash, that could be eventually decrypted.
+The API works using the SHA1 hash and, in order to be as secure as possible, it does not send over the wire the real password or the entire SHA1 hash, that could eventually be decrypted.
 
 The API uses the k-anonymity technique that can track your password without actually knowing it.
 In this case, it uses the first five characters of the hashed password to check if matchables passwords have been breached.
