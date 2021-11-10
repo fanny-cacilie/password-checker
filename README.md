@@ -23,12 +23,12 @@ In this case, it uses the first five characters of the hashed password to check 
 # About the application
 
 
-The current application reads the password written in a password.txt file, instead of variables or command-line arguments that can be stored in the computer logs, for example.
+The current application reads the password written in a password.txt file, instead of variables or command-line arguments that can be stored in computer logs, for example.
 
 Then, it hashes the password into SHA1, separates the hashed password into head and tail, according to the API k-anonymity funtionality
-and checks if password exists in API response
+and checks if password exists in the API response
 
-Once it is done, gets the count of leaks of the desired password by spliting the API response and communicate the user about it
+Then, it gets the count of leaks of the desired password by spliting the API response and communicate the user about it
 
 You can notice that the script does not "see" or store your password during the proccess
 And once the proccess is done, it cleans the password file for security.
