@@ -42,7 +42,7 @@ And once the proccess is done, it cleans the password file for security.
 1. Write the password you want to check in the password.txt file and save it<br><br>
 
 2. In the current directory, run: <br>
-``$ python3 checkmypass.py ``<br><br>
+``$ python3 check_password.py ``<br><br>
 
 3. You will obtain a message including the count of the times your password was found in leaks<br><br>
 
