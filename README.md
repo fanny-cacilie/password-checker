@@ -13,7 +13,7 @@ It stores close to 600.000 passwords in its database and verifies if your passwo
 And how many times it has been leaked.
 
 
-The API works using the SHA1 hash and, in order to be as secure as possible, it does not send over the wire the real password or the entire SHA1 hash, that could eventually be decrypted.
+It works using the SHA1 hash and, in order to be as secure as possible, it does not send over the wire the real password or the entire SHA1 hash, that could eventually be decrypted.
 
 The API uses the k-anonymity technique that can track your password without actually knowing it.
 In this case, it uses the first five characters of the hashed password to check if matchables passwords have been breached.
@@ -28,7 +28,7 @@ The current application reads the password written in a password.txt file, inste
 Then, it hashes the password into SHA1, separates the hashed password into head and tail, according to the API k-anonymity funtionality
 and checks if password exists in the API response
 
-Then, it gets the count of leaks of the desired password by spliting the API response and communicate the user about it
+It gets the count of leaks of the desired password by spliting the API response and communicate the user about it
 
 You can notice that the script does not "see" or store your password during the proccess
 And once the proccess is done, it cleans the password file for security.
